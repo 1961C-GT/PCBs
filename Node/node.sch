@@ -10325,6 +10325,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="C19" library="adafruit" deviceset="C-US" device="C0603K" value="27pF"/>
 <part name="Y2" library="SparkFun-FreqCtrl" deviceset="RESONATOR" device="SMD" value="38.4MHz, 10pF"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11130,6 +11132,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="210.82" y="63.5" size="1.778" layer="97" rot="R90">Optional: Depends
 on SPI Config</text>
 <text x="73.66" y="66.04" size="1.778" layer="97">100R RF Traces</text>
+<text x="71.12" y="111.76" size="1.778" layer="97">CONTAINS INTERNAL
+CLOCK ALSO</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -11251,6 +11255,12 @@ on SPI Config</text>
 <instance part="GND11" gate="1" x="69.85" y="105.41" smashed="yes" rot="R270">
 <attribute name="VALUE" x="67.31" y="107.95" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="GND14" gate="1" x="81.28" y="96.52" smashed="yes" rot="R270">
+<attribute name="VALUE" x="78.74" y="99.06" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND15" gate="1" x="81.28" y="60.96" smashed="yes" rot="R270">
+<attribute name="VALUE" x="78.74" y="63.5" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11323,6 +11333,16 @@ on SPI Config</text>
 <pinref part="Y2" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="105.41" x2="72.39" y2="105.41" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="TESTMODE"/>
+<wire x1="93.98" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="FORCEON"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="93.98" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
