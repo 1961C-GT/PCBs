@@ -8879,6 +8879,9 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <class number="2" name="double" width="0.19176875" drill="0">
 <clearance class="2" value="0.1778"/>
 </class>
+<class number="3" name="ant" width="0.23495" drill="0">
+<clearance class="3" value="0.2032"/>
+</class>
 </classes>
 <parts>
 <part name="U$5" library="SparkFun" deviceset="5V" device=""/>
@@ -10335,7 +10338,7 @@ referenced to inner layer 1</text>
 <wire x1="93.98" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ANT" class="1">
+<net name="ANT" class="3">
 <segment>
 <pinref part="BALUN1" gate="G$1" pin="UNBALANCED_PORT"/>
 <wire x1="33.02" y1="96.52" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
