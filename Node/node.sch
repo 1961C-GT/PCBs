@@ -9171,6 +9171,33 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="0" y1="-0.254" x2="0" y2="0.254" width="0.1524" layer="23"/>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="ASTXR-12">
+<smd name="P$1" x="-1.04" y="-0.7" dx="0.63" dy="0.85" layer="1" rot="R180"/>
+<smd name="P$3" x="1.04" y="-0.7" dx="0.63" dy="0.85" layer="1" rot="R180"/>
+<smd name="P$4" x="1.04" y="0.7" dx="0.63" dy="0.85" layer="1" rot="R180"/>
+<smd name="P$6" x="-1.04" y="0.7" dx="0.63" dy="0.85" layer="1" rot="R180"/>
+<wire x1="1.25" y1="-0.2" x2="1.25" y2="0.2" width="0.1016" layer="21"/>
+<wire x1="-1.25" y1="0.2" x2="-1.25" y2="-0.2" width="0.1016" layer="21"/>
+<wire x1="-0.6" y1="1" x2="0.6" y2="1" width="0.1016" layer="21"/>
+<wire x1="0.6" y1="-1" x2="-0.6" y2="-1" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="-0.9" x2="-1.5" y2="-1.3" width="0.1016" layer="21"/>
+<wire x1="-1.5" y1="-1.3" x2="-1.1" y2="-1.3" width="0.1016" layer="21"/>
+<rectangle x1="-1.25" y1="-1" x2="1.25" y2="1" layer="41"/>
+<wire x1="0" y1="0.2" x2="0" y2="-0.1" width="0.1016" layer="21"/>
+<wire x1="0" y1="-0.1" x2="0" y2="-0.2" width="0.1016" layer="21"/>
+<wire x1="0.2" y1="0" x2="-0.1" y2="0" width="0.1016" layer="21"/>
+<wire x1="-0.1" y1="0" x2="-0.2" y2="0" width="0.1016" layer="21"/>
+<wire x1="0" y1="-0.2" x2="-0.1" y2="-0.2" width="0.1016" layer="21"/>
+<wire x1="-0.2" y1="-0.1" x2="-0.2" y2="0" width="0.1016" layer="21"/>
+<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="-0.2" width="0.1016" layer="21"/>
+<wire x1="-0.1" y1="-0.2" x2="-0.2" y2="-0.2" width="0.1016" layer="21"/>
+<wire x1="-0.2" y1="-0.2" x2="-0.2" y2="-0.1" width="0.1016" layer="21"/>
+<wire x1="-0.2" y1="-0.1" x2="-0.1" y2="-0.1" width="0.1016" layer="21"/>
+<wire x1="0" y1="-0.1" x2="-0.1" y2="-0.1" width="0.1016" layer="21"/>
+<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="0" width="0.1016" layer="21"/>
+<text x="-1.4" y="-2" size="0.6096" layer="21">&gt;NAME</text>
+<text x="-1.4" y="-2.8" size="0.6096" layer="21">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DW1000-I">
@@ -9272,6 +9299,20 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="3.81" y1="-1.524" x2="3.81" y2="-1.016" width="0.1524" layer="94" curve="-180"/>
 <text x="7.62" y="-6.1722" size="3.4798" layer="96" ratio="10" rot="SR0">&gt;Value</text>
 <text x="7.62" y="-2.9972" size="3.4798" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+</symbol>
+<symbol name="ASTXR-12">
+<pin name="VCC" x="-10.16" y="2.54" visible="off" length="short"/>
+<pin name="OUT" x="10.16" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<text x="-2.286" y="-1.778" size="1.6764" layer="95">GND</text>
+<text x="-6.858" y="1.778" size="1.6764" layer="95">VCC</text>
+<text x="2.794" y="1.778" size="1.6764" layer="95">OUT</text>
+<text x="-7.366" y="8.128" size="1.6764" layer="95">&gt;NAME</text>
+<text x="-7.366" y="5.842" size="1.6764" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9400,6 +9441,23 @@ to 6.8 Mbps</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DR736R8R" constant="no"/>
 <attribute name="VENDOR" value="Cooper Bussmann" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ASTXR-12">
+<gates>
+<gate name="G$1" symbol="ASTXR-12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ASTXR-12">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$1 P$3"/>
+<connect gate="G$1" pin="OUT" pad="P$4"/>
+<connect gate="G$1" pin="VCC" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -13062,6 +13120,11 @@ Mouser: 579-MCP73833-AMI/UN&lt;/p&gt;
 <part name="R19" library="SparkFun-Passives" deviceset="RESISTOR" device="0402-RES" value="470"/>
 <part name="SFD" library="SparkFun-LED" deviceset="LED" device="0603"/>
 <part name="RXOK" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="EXTCLK" library="MainLib" deviceset="ASTXR-12" device="" value="38.400MHz"/>
+<part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C34" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="2200pF"/>
+<part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="C35" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -14150,7 +14213,6 @@ R24 = 1.15Mohm</text>
 <text x="209.55" y="99.06" size="1.778" layer="97" rot="R90">Power: DW1000 Datasheet (V2.12) Page 33</text>
 <text x="231.14" y="60.96" size="1.778" layer="97" rot="R90">Optional: Depends
 on SPI Config</text>
-<text x="85.09" y="113.03" size="1.778" layer="97">Optional</text>
 <text x="142.24" y="121.92" size="1.778" layer="97" rot="R90">VDDPA1 &amp; VDDPA2
 Need Work</text>
 <text x="241.3" y="142.24" size="1.778" layer="97">DESIGN NOTE:
@@ -14180,15 +14242,15 @@ referenced to inner layer 1</text>
 <text x="68.58" y="66.04" size="1.778" layer="97">100 Ω </text>
 <text x="43.18" y="63.5" size="1.778" layer="97">50 Ω </text>
 <text x="43.18" y="71.12" size="1.778" layer="97">50 Ω </text>
-<wire x1="111.76" y1="101.6" x2="83.82" y2="101.6" width="0.508" layer="97" style="longdash"/>
-<wire x1="83.82" y1="101.6" x2="83.82" y2="111.76" width="0.508" layer="97" style="longdash"/>
-<wire x1="83.82" y1="111.76" x2="111.76" y2="111.76" width="0.508" layer="97" style="longdash"/>
-<wire x1="111.76" y1="111.76" x2="111.76" y2="101.6" width="0.508" layer="97" style="longdash"/>
+<wire x1="114.3" y1="101.6" x2="78.74" y2="101.6" width="0.508" layer="97" style="longdash"/>
+<wire x1="78.74" y1="101.6" x2="78.74" y2="139.7" width="0.508" layer="97" style="longdash"/>
+<wire x1="78.74" y1="139.7" x2="114.3" y2="139.7" width="0.508" layer="97" style="longdash"/>
+<wire x1="114.3" y1="139.7" x2="114.3" y2="101.6" width="0.508" layer="97" style="longdash"/>
 <wire x1="213.36" y1="134.62" x2="271.78" y2="134.62" width="0.508" layer="97" style="longdash"/>
 <wire x1="271.78" y1="134.62" x2="271.78" y2="160.02" width="0.508" layer="97" style="longdash"/>
 <wire x1="271.78" y1="160.02" x2="213.36" y2="160.02" width="0.508" layer="97" style="longdash"/>
 <wire x1="213.36" y1="160.02" x2="213.36" y2="134.62" width="0.508" layer="97" style="longdash"/>
-<text x="86.36" y="106.68" size="1.778" layer="97">External Crystal</text>
+<text x="80.01" y="136.906" size="1.778" layer="97">External Crystal (TCXO)</text>
 <text x="330.2" y="144.78" size="1.778" layer="97">VDDLDO/VDDBATT</text>
 <text x="330.2" y="139.7" size="1.778" layer="97">VDDIOA1/VDDLDO2/VDD_AON</text>
 <text x="330.2" y="129.54" size="1.778" layer="97">VDDPA1</text>
@@ -14197,6 +14259,7 @@ referenced to inner layer 1</text>
 <wire x1="368.3" y1="68.58" x2="294.64" y2="68.58" width="0.508" layer="97" style="longdash"/>
 <wire x1="294.64" y1="68.58" x2="294.64" y2="157.48" width="0.508" layer="97" style="longdash"/>
 <text x="294.64" y="160.02" size="1.778" layer="97">Power Smoothing</text>
+<text x="82.042" y="120.396" size="1.27" layer="97" rot="R90">Close to VDDBAT</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -14439,6 +14502,24 @@ referenced to inner layer 1</text>
 <attribute name="NAME" x="206.756" y="38.608" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="208.915" y="38.608" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="EXTCLK" gate="G$1" x="96.52" y="124.46" smashed="yes">
+<attribute name="NAME" x="89.154" y="132.588" size="1.6764" layer="95"/>
+<attribute name="VALUE" x="89.154" y="130.302" size="1.6764" layer="95"/>
+</instance>
+<instance part="GND17" gate="1" x="96.52" y="106.68" smashed="yes">
+<attribute name="VALUE" x="93.98" y="104.14" size="1.778" layer="96"/>
+</instance>
+<instance part="C34" gate="G$1" x="109.22" y="119.38" smashed="yes" rot="R180">
+<attribute name="NAME" x="106.807" y="116.586" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="110.109" y="128.524" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY10" gate="G$1" x="83.82" y="129.54" smashed="yes">
+<attribute name="VALUE" x="82.804" y="133.096" size="1.778" layer="96"/>
+</instance>
+<instance part="C35" gate="G$1" x="83.82" y="119.38" smashed="yes" rot="R180">
+<attribute name="NAME" x="81.153" y="116.586" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="84.455" y="126.492" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14603,6 +14684,16 @@ referenced to inner layer 1</text>
 <wire x1="195.58" y1="33.02" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
 <junction x="195.58" y="33.02"/>
 </segment>
+<segment>
+<pinref part="EXTCLK" gate="G$1" pin="GND"/>
+<wire x1="96.52" y1="119.38" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<pinref part="C35" gate="G$1" pin="1"/>
+<wire x1="96.52" y1="111.76" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="114.3" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
+<junction x="96.52" y="111.76"/>
+</segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
@@ -14653,6 +14744,15 @@ referenced to inner layer 1</text>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
 <wire x1="330.2" y1="73.66" x2="335.28" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="L2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="EXTCLK" gate="G$1" pin="VCC"/>
+<wire x1="86.36" y1="127" x2="83.82" y2="127" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="127" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
+<pinref part="C35" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="127" x2="83.82" y2="121.92" width="0.1524" layer="91"/>
+<junction x="83.82" y="127"/>
 </segment>
 </net>
 <net name="VREF" class="0">
@@ -14881,7 +14981,7 @@ referenced to inner layer 1</text>
 <segment>
 <pinref part="U2" gate="G$1" pin="!RST"/>
 <wire x1="111.76" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
-<label x="83.82" y="99.06" size="1.778" layer="95"/>
+<label x="83.82" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="!SPICS" class="0">
@@ -15076,6 +15176,28 @@ referenced to inner layer 1</text>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="203.2" y1="48.26" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="RXOK" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="EXTCLK/XTAL1"/>
+<wire x1="111.76" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C34" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="114.3" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="EXTCLK" gate="G$1" pin="OUT"/>
+<wire x1="109.22" y1="127" x2="106.68" y2="127" width="0.1524" layer="91"/>
+<pinref part="C34" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="127" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="XTAL2"/>
+<wire x1="111.76" y1="104.14" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
