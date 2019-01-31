@@ -6909,20 +6909,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <smd name="5" x="0.65" y="0" dx="0.8" dy="0.3" layer="1"/>
 <smd name="4" x="0.65" y="-0.65" dx="0.8" dy="0.3" layer="1"/>
 </package>
-<package name="BMI-S-102">
-<smd name="P$1" x="0.5" y="2.275" dx="1" dy="4.55" layer="1"/>
-<smd name="P$2" x="0.5" y="15.025" dx="1" dy="4.55" layer="1"/>
-<smd name="P$3" x="16.8" y="15.025" dx="1" dy="4.55" layer="1"/>
-<smd name="P$4" x="16.8" y="2.275" dx="1" dy="4.55" layer="1"/>
-<smd name="P$5" x="2.275" y="0.5" dx="4.55" dy="1" layer="1"/>
-<smd name="P$6" x="15.025" y="0.5" dx="4.55" dy="1" layer="1"/>
-<smd name="P$7" x="15.025" y="16.8" dx="4.55" dy="1" layer="1"/>
-<smd name="P$8" x="2.275" y="16.8" dx="4.55" dy="1" layer="1"/>
-<smd name="P$9" x="0.5" y="8.65" dx="1" dy="3.8" layer="1"/>
-<smd name="P$10" x="16.8" y="8.65" dx="1" dy="3.8" layer="1"/>
-<smd name="P$11" x="8.65" y="0.5" dx="3.8" dy="1" layer="1"/>
-<smd name="P$12" x="8.65" y="16.8" dx="3.8" dy="1" layer="1"/>
-</package>
 <package name="ASTXR-12">
 <smd name="P$1" x="-1.04" y="-0.7" dx="0.63" dy="0.85" layer="1" rot="R180"/>
 <smd name="P$3" x="1.04" y="-0.7" dx="0.63" dy="0.85" layer="1" rot="R180"/>
@@ -7050,6 +7036,24 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-0.254" y1="0" x2="0.254" y2="0" width="0.1524" layer="23"/>
 <wire x1="0" y1="-0.254" x2="0" y2="0.254" width="0.1524" layer="23"/>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
+</package>
+<package name="SMS-255F">
+<smd name="P$1" x="0" y="0.88" dx="2.06" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$2" x="0.955" y="0" dx="1.91" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$3" x="6.41" y="0" dx="3" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$4" x="12.41" y="0" dx="3" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$5" x="17.88608125" y="0" dx="1.91" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$6" x="18.85" y="0.88" dx="2.06" dy="0.3" layer="1" rot="R90"/>
+<smd name="P$7" x="18.85" y="17.97" dx="2.06" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$8" x="17.88608125" y="18.85" dx="1.91" dy="0.3" layer="1"/>
+<smd name="P$9" x="12.41" y="18.85" dx="3" dy="0.3" layer="1"/>
+<smd name="P$10" x="6.41" y="18.85" dx="3" dy="0.3" layer="1"/>
+<smd name="P$11" x="0.955" y="18.85" dx="1.91" dy="0.3" layer="1"/>
+<smd name="P$12" x="0" y="17.97" dx="2.06" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$13" x="0" y="6.41" dx="3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$14" x="0" y="12.41" dx="3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$15" x="18.85" y="12.41" dx="3" dy="0.3" layer="1" rot="R270"/>
+<smd name="P$16" x="18.85" y="6.41" dx="3" dy="0.3" layer="1" rot="R270"/>
 </package>
 </packages>
 <symbols>
@@ -7264,22 +7268,9 @@ to 6.8 Mbps</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5BMI-S-202-F">
-<gates>
-<gate name="G$1" symbol="5BMI-S-202-F" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BMI-S-102">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9 P$10 P$11 P$12"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ASTXR-12">
+<description>ASTXR-12-38.400MHz -514054 Temperature Compensated Oscillator
+https://www.digikey.com/product-detail/en/abracon-llc/ASTXR-12-38.400MHZ-514054-T/535-13192-1-ND/5719479</description>
 <gates>
 <gate name="G$1" symbol="ASTXR-12" x="0" y="0"/>
 </gates>
@@ -7311,6 +7302,22 @@ to 6.8 Mbps</description>
 <attribute name="MANUFACTURER_PART_NUMBER" value="DR736R8R" constant="no"/>
 <attribute name="VENDOR" value="Cooper Bussmann" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMS-255F">
+<description>https://www.digikey.com/product-detail/en/leader-tech-inc/SMS-255F/1798-1199-1-ND/7203579</description>
+<gates>
+<gate name="G$1" symbol="5BMI-S-202-F" x="5.08" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="SMS-255F">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9 P$10 P$11 P$12 P$13 P$14 P$15 P$16"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -11230,18 +11237,18 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
 <packages>
 </packages>
 <symbols>
-<symbol name="GND">
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
@@ -11361,8 +11368,6 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="C31" library="SparkFun-Passives" deviceset="CAP" device="0402-CAP" value="22uF"/>
 <part name="L2" library="Wurth_Elektronik_Passive_rev15e" deviceset="WE-CBA" device="_0402(HC)" value="BLM15AG601SN1D"/>
-<part name="U$1" library="MainLib" deviceset="5BMI-S-202-F" device=""/>
-<part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1"/>
 <part name="TX" library="SparkFun-LED" deviceset="LED" device="0603"/>
 <part name="RX" library="SparkFun-LED" deviceset="LED" device="0603"/>
@@ -11404,21 +11409,21 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <part name="U$13" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$15" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="L4" library="MainLib" deviceset="DR73-6R8-R" device="" value="https://www.digikey.com/product-detail/en/eaton-electronics-division/DR73-6R8-R/513-1134-1-ND/754632"/>
-<part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="270K"/>
 <part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100K"/>
-<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="DONE" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="GREEN"/>
 <part name="CHRG/LBO" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="ORANGE"/>
 <part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="R16" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="C17" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10uF"/>
-<part name="GND21" library="supply1" deviceset="GND" device=""/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="2.0K"/>
 <part name="R20" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100K"/>
-<part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="GND24" library="supply1" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="THERM" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="15K"/>
 <part name="U$2" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="U$36" library="microbuilder" deviceset="VBUS" device=""/>
@@ -11432,9 +11437,11 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <part name="U$3" library="microbuilder" deviceset="VLIPO" device=""/>
 <part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10uF"/>
 <part name="CN4" library="microbuilder" deviceset="USB" device="MICRO_20329" value="MicroUSB"/>
-<part name="GND25" library="supply1" deviceset="GND" device=""/>
-<part name="GND26" library="supply1" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$4" library="microbuilder" deviceset="VBUS" device=""/>
+<part name="U$6" library="MainLib" deviceset="SMS-255F" device=""/>
+<part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12808,10 +12815,6 @@ referenced to inner layer 1</text>
 <instance part="L2" gate="G$1" x="322.58" y="73.66" smashed="yes">
 <attribute name="NAME" x="314.96" y="76.2" size="1.778" layer="95"/>
 </instance>
-<instance part="U$1" gate="G$1" x="38.1" y="33.02" smashed="yes"/>
-<instance part="GND16" gate="1" x="38.1" y="15.24" smashed="yes">
-<attribute name="VALUE" x="35.56" y="12.7" size="1.778" layer="96"/>
-</instance>
 <instance part="TX" gate="G$1" x="187.96" y="43.18" smashed="yes">
 <attribute name="NAME" x="191.516" y="38.608" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="193.675" y="38.608" size="1.778" layer="96" rot="R90"/>
@@ -12860,6 +12863,10 @@ referenced to inner layer 1</text>
 <instance part="C35" gate="G$1" x="83.82" y="119.38" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.153" y="116.586" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="84.455" y="126.492" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="U$6" gate="G$1" x="38.1" y="30.48" smashed="yes"/>
+<instance part="GND27" gate="1" x="38.1" y="12.7" smashed="yes">
+<attribute name="VALUE" x="35.56" y="10.16" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -12964,11 +12971,6 @@ referenced to inner layer 1</text>
 <junction x="330.2" y="81.28"/>
 </segment>
 <segment>
-<pinref part="GND16" gate="1" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
-<wire x1="38.1" y1="22.86" x2="38.1" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="139.7" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="119.38" x2="205.74" y2="114.3" width="0.1524" layer="91"/>
@@ -13034,6 +13036,11 @@ referenced to inner layer 1</text>
 <wire x1="83.82" y1="114.3" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="111.76" x2="96.52" y2="111.76" width="0.1524" layer="91"/>
 <junction x="96.52" y="111.76"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="P$1"/>
+<wire x1="38.1" y1="20.32" x2="38.1" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="GND27" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
