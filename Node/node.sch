@@ -9685,19 +9685,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <wire x1="-7.2" y1="-0.2" x2="-4" y2="-0.2" width="0.127" layer="51" curve="-297.75506"/>
 <circle x="0" y="0" radius="10.16" width="0.127" layer="51"/>
 </package>
-<package name="TERMBLOCK_1X2-3.5MM">
-<wire x1="-3.4" y1="3.4" x2="-3.4" y2="-2.2" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="-3.4" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="-3.6" x2="3.6" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="3.6" y1="-3.6" x2="3.6" y2="-2.2" width="0.2032" layer="21"/>
-<wire x1="3.6" y1="-2.2" x2="3.6" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="3.6" y1="3.4" x2="-3.4" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="3.6" y2="-2.2" width="0.2032" layer="21"/>
-<pad name="1" x="1.8" y="0" drill="1" diameter="2.1844"/>
-<pad name="2" x="-1.7" y="0" drill="1" diameter="2.1844"/>
-<text x="-3" y="3.89" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.048" y="-3.048" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="EIA3216-18/A-R">
 <description>&lt;b&gt;Chip Capacitor Type KEMET A / EIA 3216-18 Reflow solder&lt;/b&gt;&lt;p&gt;
 KEMET S / EIA 3216-12</description>
@@ -10607,16 +10594,6 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <wire x1="-0.254" y1="1.27" x2="-0.254" y2="-1.27" width="0.254" layer="94"/>
 <text x="-1.778" y="-1.143" size="1.27" layer="94" rot="R270">-</text>
 </symbol>
-<symbol name="1X2">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<pin name="1" x="-5.08" y="2.54" visible="pin" length="middle" direction="pas"/>
-<pin name="2" x="-5.08" y="0" visible="pin" length="middle" direction="pas"/>
-<text x="-2.54" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
-<text x="-2.54" y="7.62" size="1.27" layer="95">&gt;NAME</text>
-</symbol>
 <symbol name="VBAT">
 <text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="VBAT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
@@ -10968,24 +10945,6 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <connects>
 <connect gate="G$1" pin="+" pad="+$1 +$2"/>
 <connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TERMBLOCK_1X2" prefix="X" uservalue="yes">
-<description>3.5mm Terminal block
-&lt;p&gt;http://www.ladyada.net/library/pcb/eaglelibrary.html&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="1X2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TERMBLOCK_1X2-3.5MM">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11388,10 +11347,7 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <part name="U$18" library="microbuilder" deviceset="GND" device=""/>
 <part name="C22" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10uF"/>
 <part name="U$19" library="microbuilder" deviceset="GND" device=""/>
-<part name="B1" library="microbuilder" deviceset="BATTERY" device="" value="1.8-5V"/>
-<part name="U$23" library="microbuilder" deviceset="GND" device=""/>
 <part name="C30" library="SparkFun-Passives" deviceset="CAP" device="0805" value="2.2uF"/>
-<part name="X1" library="microbuilder" deviceset="TERMBLOCK_1X2" device=""/>
 <part name="U$28" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="PWR" library="microbuilder" deviceset="LED" device="0805_NOOUTLINE" value="GREEN"/>
 <part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
@@ -11402,12 +11358,10 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <part name="U$31" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$32" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$33" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$34" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$35" library="microbuilder" deviceset="GND" device=""/>
 <part name="C33" library="microbuilder" deviceset="CAP_TANTALUM" device="B/3528_REFLOW" value="100uF/6V - https://www.digikey.com/product-detail/en/avx-corporation/F930G107MBA/478-8135-1-ND/4005827"/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="U$13" library="microbuilder" deviceset="GND" device=""/>
-<part name="U$15" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="L4" library="MainLib" deviceset="DR73-6R8-R" device="" value="https://www.digikey.com/product-detail/en/eaton-electronics-division/DR73-6R8-R/513-1134-1-ND/754632"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="270K"/>
@@ -11484,20 +11438,9 @@ R24 = 1.15Mohm</text>
 <instance part="U$19" gate="G$1" x="30.48" y="48.26" smashed="yes">
 <attribute name="VALUE" x="28.956" y="45.72" size="1.27" layer="96"/>
 </instance>
-<instance part="B1" gate="G$1" x="15.24" y="60.96" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.065" y="58.42" size="1.27" layer="95" rot="R90"/>
-<attribute name="VALUE" x="20.32" y="58.42" size="1.27" layer="96" rot="R90"/>
-</instance>
-<instance part="U$23" gate="G$1" x="15.24" y="48.26" smashed="yes">
-<attribute name="VALUE" x="13.716" y="45.72" size="1.27" layer="96"/>
-</instance>
 <instance part="C30" gate="G$1" x="99.06" y="60.96" smashed="yes">
 <attribute name="NAME" x="96.77" y="62.21" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="101.36" y="62.21" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
-</instance>
-<instance part="X1" gate="G$1" x="132.08" y="68.58" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="129.54" y="73.66" size="1.27" layer="96" rot="MR180"/>
-<attribute name="NAME" x="129.54" y="60.96" size="1.27" layer="95" rot="MR180"/>
 </instance>
 <instance part="U$28" gate="G$1" x="30.48" y="73.66" smashed="yes">
 <attribute name="VALUE" x="28.956" y="74.676" size="1.27" layer="96"/>
@@ -11532,9 +11475,6 @@ R24 = 1.15Mohm</text>
 <instance part="U$33" gate="G$1" x="106.68" y="53.34" smashed="yes">
 <attribute name="VALUE" x="105.156" y="50.8" size="1.27" layer="96"/>
 </instance>
-<instance part="U$34" gate="G$1" x="124.46" y="60.96" smashed="yes">
-<attribute name="VALUE" x="122.936" y="58.42" size="1.27" layer="96"/>
-</instance>
 <instance part="U$35" gate="G$1" x="142.24" y="78.74" smashed="yes">
 <attribute name="VALUE" x="140.716" y="76.2" size="1.27" layer="96"/>
 </instance>
@@ -11546,9 +11486,6 @@ R24 = 1.15Mohm</text>
 </instance>
 <instance part="U$13" gate="G$1" x="66.04" y="137.16" smashed="yes">
 <attribute name="VALUE" x="64.516" y="134.62" size="1.27" layer="96"/>
-</instance>
-<instance part="U$15" gate="G$1" x="15.24" y="73.66" smashed="yes">
-<attribute name="VALUE" x="13.716" y="74.676" size="1.27" layer="96"/>
 </instance>
 <instance part="L4" gate="A" x="40.64" y="68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.6372" y="76.2" size="3.4798" layer="95" ratio="10" rot="SR90"/>
@@ -11685,11 +11622,6 @@ R24 = 1.15Mohm</text>
 <wire x1="30.48" y1="53.34" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="B1" gate="G$1" pin="-"/>
-<pinref part="U$23" gate="G$1" pin="GND"/>
-<wire x1="15.24" y1="58.42" x2="15.24" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$30" gate="G$1" pin="GND"/>
 <pinref part="C32" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="50.8" x2="38.1" y2="53.34" width="0.1524" layer="91"/>
@@ -11711,12 +11643,6 @@ R24 = 1.15Mohm</text>
 <wire x1="106.68" y1="58.42" x2="106.68" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U$33" gate="G$1" pin="GND"/>
 <pinref part="C33" gate="G$1" pin="-"/>
-</segment>
-<segment>
-<wire x1="124.46" y1="66.04" x2="124.46" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="66.04" x2="127" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$34" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R22" gate="G$1" pin="2"/>
@@ -11807,11 +11733,6 @@ R24 = 1.15Mohm</text>
 <pinref part="L4" gate="A" pin="1"/>
 </segment>
 <segment>
-<pinref part="B1" gate="G$1" pin="+"/>
-<wire x1="15.24" y1="71.12" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="VBAT"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="VBAT"/>
 <wire x1="243.84" y1="142.24" x2="243.84" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VOUT1"/>
@@ -11851,20 +11772,16 @@ R24 = 1.15Mohm</text>
 <pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="66.04" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
 <junction x="99.06" y="68.58"/>
-<junction x="116.84" y="68.58"/>
 <pinref part="PWR" gate="G$1" pin="A"/>
 <wire x1="119.38" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="68.58" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 <junction x="106.68" y="68.58"/>
-<pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="127" y1="68.58" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <junction x="93.98" y="68.58"/>
 <pinref part="C33" gate="G$1" pin="+"/>
 <pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
 <wire x1="116.84" y1="88.9" x2="116.84" y2="83.82" width="0.1524" layer="91" style="longdash"/>
 <junction x="116.84" y="83.82"/>
-<wire x1="116.84" y1="68.58" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
